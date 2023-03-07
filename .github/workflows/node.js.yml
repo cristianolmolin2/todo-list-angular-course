@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,6 +26,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Angular Github Actions
+      # You may pin to the exact commit or the version.
+      # uses: mayurrawte/github-angular-actions@54f2c8973b0c096a47a02b72d39758d29dd08e2b
+      uses: mayurrawte/github-angular-actions@v1.1.0
+    - name: Install Dependencies
+      run: npm install
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
