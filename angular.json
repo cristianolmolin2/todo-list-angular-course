@@ -20,7 +20,7 @@
             "outputPath": "dist/todo-list-angular-course",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "https://cristianolmolin2.github.io/todo-list-angular-course/",
+            "baseHref": "/todo-list-angular-course/",
             "polyfills": [
               "zone.js"
             ],
@@ -104,6 +104,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
