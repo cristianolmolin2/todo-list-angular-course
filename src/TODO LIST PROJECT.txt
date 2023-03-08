@@ -1,0 +1,8 @@
+TODO LIST PROJECT
+1- Adicionar, marcar como concluída ou remover tarefas
+2- Campo adicionar tarefas será o input do nome da tarefa
+3- Ao adicionar uma tarefa, esta tarefa será listada com um checkbox box indicando se está concluída e um botão excluir, que será o ícone de uma lixeira
+3.1- Ao marcar a tarefa como concluída, ela passará para o fim da lista
+4- Botão deletar todas as tarefas
+Plus - Salvar no localStorage
+Build - código no GitHub e GhPages
